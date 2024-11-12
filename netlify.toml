@@ -1,0 +1,25 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()"
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://appssdk.zoom.us https://static.elfsight.com https://cdn.jsdelivr.net;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      img-src 'self' data: https://*.unsplash.com https://stackblitz.com blob:;
+      font-src 'self' https://fonts.gstatic.com;
+      connect-src 'self' https://gxkiubkgtkgvyidvuagh.supabase.co wss://gxkiubkgtkgvyidvuagh.supabase.co https://*.supabase.co;
+      frame-src 'self' https://elfsight.com https://appssdk.zoom.us;
+      media-src 'self' https://stackblitz.com;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+      frame-ancestors 'self';
+      upgrade-insecure-requests;
+      block-all-mixed-content;
+    """

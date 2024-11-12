@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20Z" fill="#F4A61D"/>
+  <path d="M60 15h10c1.1046 0 2 .8954 2 2v6c0 1.1046-.8954 2-2 2H60c-1.1046 0-2-.8954-2-2v-6c0-1.1046.8954-2 2-2z" fill="#F4A61D"/>
+  <text x="80" y="27" fill="#F4A61D" font-family="Arial" font-size="24" font-weight="bold">CAVEDAY</text>
+</svg>
